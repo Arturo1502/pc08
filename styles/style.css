@@ -1,0 +1,75 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F5F4DC;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 500px;
+    min-height: 360px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(221, 221, 221, 0.2) 0px 7px 29px 0px;
+
+
+}
+
+.nuevo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 90%;
+    height: 100%;
+    gap: 15px;
+}
+
+.ingresar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ingresar>input {
+    height: 30px;
+    border-radius: 4px;
+    border: RGB(221, 221, 221) solid 1px;
+}
+
+.ingresar>textarea {
+    height: 100px;
+    min-width: 90%;
+    border-radius: 4px;
+    border: RGB(221, 221, 221) solid 1px;
+    padding: 10px;
+}
+
+
+.btn {
+    border: none;
+    color: #F9FAFF;
+    background-color: #017BFE;
+    font-size: 1rem;
+    padding: 14px 28px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    
+}
