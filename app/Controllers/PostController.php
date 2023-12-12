@@ -9,15 +9,15 @@ require_once __DIR__ . '/../Models/Post.php';
 class PostController{
     function index()
     {
-        
+        session_start();
         $publicacion = new Post();
         $publicaciones = $publicacion->all();
-        session_start();
+        
         
         $_SESSION['publicaciones'] = $publicaciones;
 
         header('Location: ../resources/views/post-read.php');;
-        return $publicacion;
+        exit;
     }
 
 
@@ -29,6 +29,7 @@ class PostController{
         $publicacion->create($_POST['tituloInput'], $_POST['contenidoInput']);
 
         header('location: ../index.php');
+        exit;
     }
 
 
@@ -36,6 +37,7 @@ class PostController{
         $publicacion = new Post();
         $publicacion->delete($id);
         header('location: ../index.php');
+        exit;
     }
 }
 

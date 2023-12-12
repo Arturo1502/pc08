@@ -69,8 +69,24 @@ body {
     color: #F9FAFF;
     background-color: #017BFE;
     font-size: 1rem;
-    padding: 14px 28px;
+    padding: 7px 14px;
     margin-bottom: 30px;
     cursor: pointer;
+    width: 40%;
+    border-radius: 10px;
     
+}
+
+.back{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.back>a{
+    text-decoration: none;
+    color: #017BFE;
 }

@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F5F4DC;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 30px;
+    margin: 20px 20px;
+}
+
+.allPost{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+}
+
+.posteo{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 1px rgb(221, 221, 221);
+    padding: 20px 7px;
+    gap: 5px;
+}
+
+.allPost>.posteo>h2{
+    font-size: 1.4rem;
+}
+
+.allPost>.posteo>p{
+    font-size: 1rem;
+}
+
+.allPost>.posteo>a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color:#017BFE;
+}
+
+.back{
+    text-decoration: none;
+    color: #017BFE;
+}

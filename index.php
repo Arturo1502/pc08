@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__ . '/vendor/autoload.php';
 
 use App\Controllers\PostController;
@@ -10,9 +9,14 @@ if (isset($_GET['action']) && isset($_GET['controller'])) {
     $controllerClassName = "\\App\\Controllers\\" . $_GET['controller'];
     $postController = new $controllerClassName();
 
-    $postController->{$_GET['action']}();
+    if(isset($_GET['id'])) {
+        $postController->{$_GET['action']}($_GET['id']);
+    } else {
+        $postController->{$_GET['action']}();
+    }
 } else {
     require_once $_SERVER['DOCUMENT_ROOT'] . '/app/Controllers/PostController.php';
     $postController = new PostController();
     $postController->index();
 }
+?>

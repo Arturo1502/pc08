@@ -1,4 +1,7 @@
+<?php
 
+session_start();
+?>
 
 
 <!DOCTYPE html>
@@ -20,8 +23,6 @@
         <div class="card">
             <form class="nuevo" action="/index.php?action=store&controller=PostController" method="post">
                 <div class="ingresar">
-                    
-
                     <label for="tituloInput">Título:</label>
                     <input class="ingTituto" type="text" name="tituloInput" id="tituloInput">
                 </div>
@@ -31,6 +32,9 @@
                 </div>
                 <button class="btn" type="submit">Guardar Articulo</button>
             </form>
+            <div class="back">
+                <a style="display:flex" href="/index.php">Volver</a>
+            </div>
         </div>
 
     </div>
