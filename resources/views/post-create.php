@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,14 +18,16 @@
             <h1>Agregar Nuevo Artículo</h1>
         </div>
         <div class="card">
-            <form class="nuevo" action="" method="post">
+            <form class="nuevo" action="/index.php?action=store&controller=PostController" method="post">
                 <div class="ingresar">
+                    
+
                     <label for="tituloInput">Título:</label>
                     <input class="ingTituto" type="text" name="tituloInput" id="tituloInput">
                 </div>
                 <div class="ingresar">
-                    <label for="descripcionInput">Descripción:</label>
-                    <textarea id="descripcionInput" name="descripcionInput" ></textarea>
+                    <label for="contenidoInput">Contenido:</label>
+                    <textarea id="contenidoInput" name="contenidoInput"></textarea>
                 </div>
                 <button class="btn" type="submit">Guardar Articulo</button>
             </form>
